@@ -1,0 +1,10 @@
+1️⃣ Task 1: Write a program to store elements in a List and print it using a `for-in` loop.
+2️⃣ Task 2: Write a program to store values in a List and display them in reverse order.
+3️⃣ Task 3: Write a program to find the sum of all elements in the List.
+4️⃣ Task 4: Write a program to copy the elements of one List into another List using an appropriate loop.
+5️⃣ Task 5: Write a program to count the total number of duplicate elements in a List.
+6️⃣ Task 6: Write a program to find the maximum and minimum elements in a List.
+7️⃣ Task 7: Write a program to store values in a Set and print all elements using a loop.
+8️⃣ Task 8: Write a program to print only even numbers in a Set.
+9️⃣ Task 9: Write a program to count the total number of negative elements in a Set.
+Task 10: Write a program to search for a number in a Set and print 'Number Exists!' if that number is found in the Set, and 'Number does not exist!' if it's not found.

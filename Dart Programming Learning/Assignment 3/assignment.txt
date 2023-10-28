@@ -1,0 +1,52 @@
+Please solve the following questions using 'if-else' statements and submit your code via https://codeshare.io/ for all questions as a single post by Wednesday
+Q1. Write a program having two integer variables and check whether they are equal or not. For example a=10, b=10 both ‘a’ & ‘b’ are equal
+Q2. Write a program to find a greater number between two integer variables. For example a=20, b=15
+Q3. Write a Program to check whether a person is eligible to vote or not. For example, if the age is less than 18 then he/she wouldn’t be able to cast his/her vote.
+Q4. Write a Program to find the largest number of the three. For example a=10, b=20, c=30 find the largest number among them
+Q5. Write a program to check whether a number is negative, positive, or zero. If a=10 then it will print “Number is positive”.
+Q6. Student Grading System
+Build a “Student Grading System” using the concept of an if-else statement. If the marks of a student are equal to or greater than 90 then he will get ‘A+’ grade, if he gets marks between 80-89 then the grade will be A if marks between 70-79 then the grade will be ‘B’ and students having marks less than 70 will get ‘F’ grade.
+Q7. Write a program to assign temperature in centigrade to a variable and display a suitable message according to the temperature state below :
+Temp < 0 then Freezing weather
+Temp 0-10 then Very Cold weather
+Temp 10-20 then Cold weather
+Temp 20-30 then Normal in Temp
+Temp 30-40 then It's Hot
+Temp >=40 then It's Very Hot
+Test Data :
+42
+Expected Output :
+It's very hot.
+Q8. Write a dart program to check whether a character in a variable is an alphabet, digit, or special character.
+Test Data :
+@
+Expected Output :
+This is a special character.
+Q9. Write a program in a dart to check whether an alphabet in a variable is a vowel or consonant.
+Test Data :
+k
+Expected Output :
+The alphabet is a consonant.
+Q10. Write a program and assign a grade to a variable and declare the equivalent description
+Grade Description
+E - Excellent
+V - Very Good
+G - Good
+A - Average
+F - Fail
+Q11. Write a program and assign any day number in an integer and display the day name in the word. If later we change the number then it should display the name accordingly.
+Test Data :
+4
+Expected Output :
+Thursday
+Q12. Write a program to store elements in a List and print it using for & for-in loop
+Q13. Write a program to store values in a List and display it in reverse order.
+Q14. Write a program to find the sum of all elements of the List
+Q15. Write a program to copy the elements of one List into another List using the appropriate loop
+Q16. Write a program to count the total number of duplicate elements in a List
+Q17. Write a program to find the maximum and minimum element in a List
+Q18. Write a program to store values in a Set and print all elements using a loop
+Q19. Write a program to print only even numbers in a Set, the set can contain any numbers
+Q20. Write a to count the total number of negative elements in a Set.
+Q21. Write a program to search for a number in a Set and print “Number Exists!” if that number is found in a Set and print “Number does not exist!” if does not find
+Note: You must have to mention your all source code links in a file through https://codeshare.io/ and submit that file to google classroom by Wed Oct 11, 2023

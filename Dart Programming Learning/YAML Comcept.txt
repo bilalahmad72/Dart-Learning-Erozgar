@@ -1,0 +1,136 @@
+YAML:
+ - YAML yet another markup language (recursive acronym)
+ - Also say YAML ain't markup language
+ - YAML or YML (same with extenstion)
+ - YAML is a name of structure/format just like JSON 
+ - YAML is not a programming language
+ - YAML is a serialization language
+ - YAML is more sensitive than JSON
+ - YAML can also be used in data transmission just like JSON
+
+
+ - YAML is more human readable then JSON
+ - YAML emphsizes/focus on readability
+ - YAML totally works on indentation/formatting
+
+
+ - YAML is used in configuration files
+
+
+YAML Structure: 
+
+1. List <------> JSON Array 
+2. Map  <------> JSON Object
+
+
+# Map Structure in YAML
+# colon (:) followed by a space, mean its necessary a space 
+# will come after colon
+
+name: Bilal Ahmad
+age: 25
+dob: "24/12/2000"
+email: "abcd@gmail.com"
+
+
+# Map List in YAML, hyphan  followed by a space
+
+- Bilal
+- Ahmad
+- 34
+- 2/3/3022
+
+
+
+# YAML List inside a MAP
+
+name: Bilal
+roll_no: 23
+gpa: 3.21
+subjects:
+- physics
+- Chemistry
+- Math
+- Computer Science
+hobbies:
+- cricket
+- football
+- traveling
+- programming
+fav_places:
+- Lahore
+- Sheikhupura
+- Multan
+- Vehari
+
+
+#
+
+- Ali
+- 45
+- 3.45
+- sub_1: Physics
+  sub_2: Math
+  sub_3: Urdu
+  sub_4: Computer Science
+
+# 
+
+users:
+- name: Ali
+  roll: 45
+  gpa: 3.45
+  subjects:
+  - sub_1: Physics
+    sub_2: Math
+    sub_3: Urdu
+    sub_4: Computer Science
+- name: Ahmad
+  roll: 32
+  gpa: 3.1
+  subjects:
+  - sub_1: Physics
+    sub_2: Urdu
+    sub_3: Math
+    sub_4: CS
+
+# 
+
+- name: Ali
+  roll: 45
+  gpa: 3.45
+  subjects:
+  - Physics
+  - Math
+  - Urdu
+  - CS
+- name: Ahmad
+  roll: 45
+  gpa: 3.45
+  subjects:
+  - Physics
+  - Math
+  - Urdu
+  - CS
+
+
+#
+
+person: 
+ f_name: Bilal Ahmad
+ l_name: Shehbaz Ahmad
+ subjects:
+  sub_1: Physcis
+  sub_2: Math
+  sub_3: Uru
+ new_subjects:
+  - Physics
+  - Math
+  - Urdu
+  - fav_subjects:
+    sub_1: CS
+    sub_2: PF
+    sub_3: OOP      
+
+
+

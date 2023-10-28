@@ -1,0 +1,71 @@
+Version: 2.4.3
+
+major.minor.patch
+
+major: its update when major changes happen (like new things comes, libraries migrated etc..)
+
+minor: its updates when minor change happen (like colors, design, stying etc...)
+
+patch: its updates when bug fixing (small small fixing)
+
+
+lets now understanding
+
+version: 1.0.0+1
+
+1.0.0  => its the version name, build name
++1 =>  version code, build number
+
+when app again upload/update then always need to change version name and version code
+
+1.0.0-beta.1
+1.0.0-beta.2
+1.0.0-beta.3
+
+
+1.0.0-alpha.1
+1.0.0-alpha.2
+1.0.0-alpha.3
+
+1.0.0-rc.1 (rc release candidate)
+1.0.0-rc.2
+
+then
+
+in this way, we can move with the versions change
+
+1.0.0+1
+1.0.1+2
+1.0.2+3
+1.1.0+4
+1.1.1+5
+1.1.2+6
+1.1.3+7
+1.2.0+8
+1.2.1+9
+1.2.2+10
+2.0.0+11
+2.0.1+12
+2.0.2+13
+
+
+Caret Operator ( ^ ):
+
+1) - we use this to ensure backward compatibility
+2) - we use this for Non breaking updates
+3) - we use this normally with plugins
+4) - This works with all minor and patch updates under the same major version 
+
+
+
+for example of point 4:
+
+^2.3.6  it means  '2.3.6 --- 2.9.9'  means its will be competible for all these versions
+
+
+
+
+
+
+
+

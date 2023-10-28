@@ -1,0 +1,172 @@
+JSON
+- Javascript Oject Notation
+- Structure
+- Serialization Language
+- Data Transmission (Client - Server) its the main work of JSON
+- Technology Independent Concept 
+- Sender ( covering, encoding, serialization, conversion ) - Backend Developer
+- Receiver ( unpacking, decoding, deserialization, conversion ) - Frontend Developer
+
+
+JSON Structure (Parsing / Decoding)
+
+There are 3 ways to encode the data using JSON
+
+1. JSON Array
+	- We represent JSON array through square bracket []
+	- Plain or Linear Form
+
+[ "Ali", 45, 3.4343, "abcd@gmail.com", 923232302322 ]  => this is the json encoding of JSON Array
+
+
+
+2. Json Object
+	- We Represent JSON Object through curly braces {}
+	- It's exactly same concept as off map
+	- we put data in the form of "key/values" pairs
+
+
+
+3. JSON Object Inside JSON Array
+
+[
+   {
+      "name":"Muhammad Afzal",
+      "age":36,
+      "phoneNum":923212121223
+   },
+   {
+      "name":"Ahmad",
+      "age":35,
+      "phoneNum":92121321312
+   },
+   {
+      "name":"Arslan",
+      "age":40,
+      "phoneNum":92121321312
+   }
+]
+
+
+4. JSON Array inside JSON Object
+
+{
+"name": "Bilal Ahmad",
+"roll_no": 34,
+"gpa": 3.2343,
+"subjects": ["Chemistry", "Human Intraction"],
+"number": 9323423234
+}
+
+
+5. Nested JSON Objects
+
+{
+"name": "Bilal Ahmad",
+"degree": "BSCS"
+"roll_no": 34,
+"gpa": 3.2343,
+"subjects": {
+"sub_1": "Calculus", 
+"sub_2": "MAD",
+"sub_3": "Discrete Structure",
+"sub_4": "Proramming",
+}
+}
+
+
+6. Nested JSON Array (0% possibility of this & Not Applicable)
+
+[
+"Ali",
+"Hamza",
+"Ahmad",
+"Hasan",
+[
+"Fatima",
+"Uswa"
+]
+] 
+
+
+7. Nested JSON Array & Json Objects
+
+{
+  "name": "Ahmad",
+  "roll_no": 9,
+  "gpa": 3.23,
+  "subjects": [
+    {
+      "subject_title": "Physics",
+      "subject_code": 2,
+      "subject_author": "Ali"
+    },
+    {
+      "subject_title": "Computer Science",
+      "subject_code": 10,
+      "subject_author": "Ahmad"
+    },
+    {
+      "subject_title": "Math",
+      "subject_code": 15,
+      "subject_author": "Hasan"
+    }
+  ]
+}
+
+
+8. Encode all E-Rozgar Data into JSON Structure
+
+{
+  "program_title": "Erozgar",
+  "Program_manager": "Ijaz Farooq",
+  "head_office": "ASTP",
+  "total_centers": 45,
+  "total_earning": 812001212,
+  "total_courses": 9,
+  "total_graduate": 56000,
+  "centers": [
+    {
+      "center_name": "pu_lahore",
+      "center_manager": "XYZ",
+      "center_sne": "ABC",
+      "center_domain": 5,
+      "total_trainer": 10,
+      "total_graduate": 13000,
+      "courses": [
+        {
+          "course_name": "MAD",
+          "trainer_name": "Muhmmad Afzal",
+          "course_duration": 3,
+          "class_time": "09:30",
+          "total_students": 140,
+          "students": [
+            {
+              "student_name": "Bilal Ahmad",
+              "student_id": 123,
+              "email": "abcd@gmail.com",
+              "nic": "34234-2342342-2",
+              "phone": 922321231221,
+              "hobbies": [
+                "Cricket",
+                "Football"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "center_name": "lcwu"
+    },
+    {
+      "center_name": "uet_lahore"
+    }
+  ]
+}
+
+
+
+
+- XML
+- YAML

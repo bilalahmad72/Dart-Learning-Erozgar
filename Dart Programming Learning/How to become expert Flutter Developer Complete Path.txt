@@ -1,0 +1,109 @@
+Dear Students!
+In this post, i'll share with you a list of the key topics that you should learn to become a proficient Flutter developer. it may take time to cover all of the modules thoroughly. It is crucial to have a solid grasp of these concepts if you want to become an expert Flutter developer.
+PREREQUISITE
+Knowledge of Object-Oriented Programming (OOP):
+Understanding OOP concepts such as classes, objects, and inheritance will help you write better code in Flutter
+Familiarity with Integrated Development Environments (IDEs):
+Flutter can be developed using a variety of IDEs, including Android Studio, Visual Studio Code, and IntelliJ IDEA. Familiarity with an IDE can make it easier to write, test, and debug your code in Flutter
+Understanding of the Flutter Framework:
+Before starting to develop with Flutter, it's important to have a basic understanding of the Flutter framework, including its architecture, widgets, and libraries. This will help you create better apps and make more informed decisions when designing and developing your app
+
+IDE
+
+Android Studio
+Visual Studio Code
+
+BASIC WIDGETS
+
+Scaffold Container
+Row
+Column
+Card
+ListTile
+Stack
+Gesture Detector
+Expanded
+Flexible
+
+
+DYNAMIC UI
+
+Stateless vs Stateful widgets
+ListView and ListView.builder()
+GridView and GridView.builder()
+ExpansionTile
+
+
+ASSETS
+
+Fonts
+Images
+Audio/Video
+
+
+KNOWLEDGE OF
+
+Future
+Async
+Await / then
+
+
+INTEGRATION WITH API
+
+Sending data to Internet
+Fetching data from Internet
+Manual JSON parsing
+Auto JSON parsing (quicktype.io)
+Packages (http, dio)
+
+
+STATE MANAGEMENT
+
+Providers (Beginners friendly)
+BloC/Cubit
+Riverpod
+GetX
+
+
+FIREBASE
+
+Firebase Authentication
+Firestore DB
+Firebase Messanging
+Storage
+Crashlytics
+Firebase Analytics
+
+
+LOCAL STORAGE
+
+Shared Preferences(Simple key value pair)
+SQLite
+Hive
+Moor
+
+
+ADVANCED TOPICS YOU SHOULD COVER
+
+Responsive UI
+Slivers
+Light theme/Dark theme
+Dynamic Links
+Localization/Multi-language support
+Google Maps
+Social Integration (Google, Facebook, Apple)
+Animations(Implicit, Explicit)
+In-App purchases
+Payment Integration(Stripe, Paypal)
+Google Pay, Apple Pay
+
+
+FLUTTER ADVANCED
+
+Flutter rendering mechanism
+MVVM, Clean Architecture
+Isolates
+Write platform specific code(Kotlin, Swift)
+TDD (Test driven development)
+Widget tree, Element tree, Keys
+Custom Clipping and Paint
