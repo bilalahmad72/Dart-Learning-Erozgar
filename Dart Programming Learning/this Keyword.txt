@@ -1,0 +1,91 @@
+Why we use "this" keyword
+
+class Student {
+  
+  /// properties
+  late String name;
+  late int rollNo;
+  late double gpa;
+
+  
+  Student(String name, int rollNo, double gpa) {
+    this.name = name;
+    this.rollNo = rollNo;
+    this.gpa = gpa;
+  }
+  
+   - if class properties names exact like the Constructor/Funtion paremeters
+  - then we use the "this" keyword
+  - due to conflicts of paremeters and properties we use    
+  - "this" keyword to differentiate the paremeters and properties
+  - the texts that with this keyword that indicate the class 
+  -  properties on the right side are the paremeters
+  
+  /// functions 
+  void xyz() {
+   
+ }
+
+}
+
+
+/// this keyowrd short way
+
+class Student {
+  
+  /// properties
+  late String name;
+  late int rollNo;
+  late double gpa;
+
+  /// we can this way as well but bottom one will also be work same
+  Student.freelancers(String name, int rollNo, double gpa) {
+    this.name = name;
+    this.rollNo = rollNo;
+    this.gpa = gpa;
+  }
+  
+  /// shortand code of upper constructor we can make its body or not its own to        /// you. body will make using  ' { } ' brackets 
+
+Student.freelancer(this.rollNo, this.name, this.gpa);
+
+
+  /// we can this way as well but bottom one will also be work same
+  Student(String name, int rollNo, double gpa) {
+    this.name = name;
+    this.rollNo = rollNo;
+    this.gpa = gpa;
+  }
+
+ /// shortand code of upper constructor
+ Student(this.name, this.rollNo, this.gpa);
+
+}
+
+
+
+/// we can write in this way as well
+
+void main() {
+
+  Student asim = Student.freelancer("Bilal", 40, 4.32);
+
+}
+
+class Student {
+
+  /// properties
+  late String name;
+  late int rollNo;
+  late double gpa;
+
+  Student.freelancer(this.name, this.rollNo, this.gpa) {
+    int a = 20;
+    int b = 39;
+    if (a < b) {
+      print(a);
+    } else {
+      print(b);
+    }
+  }
+}

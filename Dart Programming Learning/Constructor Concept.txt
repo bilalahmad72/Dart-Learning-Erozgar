@@ -1,0 +1,156 @@
+
+Most Important, Most Close to Flutter widgets, 
+
+
+/// constructors hirerchy in the class
+
+ - first properties
+ - 2nd parameterized constructor 
+ - 3rd named constructor
+ - 4th functions
+ 
+
+Constructor
+
+- Special function
+- 90% similar with regular function
+- There is no return-type of constructor
+- Constructor name is exactly same with class name
+- Contsructors call automatically
+- A class can have multiple constructors
+
+Purpose of constructor:
+ 
+- Object Construction
+- Object Creation
+- Object Instantiation
+- Constructors are used to initialize class properties
+class
+
+
+Syntax ::
+
+
+class Student {
+  
+  /// class properties
+  late String name;
+  late int rollNo;
+  late double gpa;
+
+ 
+  Student() {
+    /// simple basic constructor of class Student
+  }
+  
+}
+
+
+void main() {
+  Student student = Student();
+  student.printDetail();
+}
+
+class Student {
+  /// class properties
+  late String name;
+  late int rollNo;
+  late double gpa;
+
+  Student() {
+    /// simple basic constructor of class Student
+    name = "Bilal";
+    rollNo = 20;
+    gpa = 3.422;
+  }
+
+  void printDetail() {
+    print(name);
+    print(rollNo);
+    print(gpa);
+  }
+}
+
+
+
+Constructor Types:
+
+- Default Constructor
+
+  - when there is no constructor in the class the its default constructor
+
+
+Example: 
+
+class Teacher {
+  
+  late String name;
+  late int age;
+  
+}
+
+
+- Parameterized Constructor / Un-Named Constructor / Explicit Constructor
+ 
+  - Its can only and only one contructor 
+
+
+Example : 
+
+class Student {
+  late String name;
+  late int rollNo;
+  late double gpa;
+
+  
+  /// parameterized constructor
+  Student() {
+    name = "Bilal";
+    rollNo = 20;
+    gpa = 3.422;
+  }
+  
+  /// this one also parameterized constructor
+  Student(int a, String b, {int c =0, String d = "Ahmad"}) {
+    name = "Bilal";
+    rollNo = 20;
+    gpa = 3.422;
+  }
+}
+
+
+- Named Constructor 
+
+ - it can be multiple constuctors in one class
+
+Example: 
+
+void main() {
+  
+  // named consttuctor calling syntax
+  Student bilal = Student.freelancer();
+  
+}
+
+
+class Student {
+  late String name;
+  late int rollNo;
+  late double gpa;
+  
+  /// this one also parameterized constructor
+  Student(int a, String b, {int c =0, String d = "Ahmad"}) {
+    name = "Bilal";
+    rollNo = 20;
+    gpa = 3.422;
+  }
+  
+  
+  
+  /// named constructor
+  Student.freelancer() {
+    
+  }
+  
+}
+

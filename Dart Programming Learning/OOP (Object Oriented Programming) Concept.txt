@@ -1,0 +1,118 @@
+OOP (Object Oriented Programming) :
+
+- 
+-
+-
+-
+-
+-
+
+Core Modules:
+
+- 
+-
+
+
+
+Classes & Objects
+
+Classes :-
+
+- A class represents a group
+- A class represents an entity
+- A class name always be Singular ( means its will be Student not Students )
+
+Objects :-
+
+- An Object is an instant of a class
+
+
+Class Syntax:
+
+- Properties --> Data Members / Specifications / Variables
+- Functions --> Methods / Member Functon 
+
+
+Objects:
+
+- A member of a group
+- An instance of a class
+
+ClassName objectName = ClassName();
+
+
+/// Object creation Methods
+
+- Student student = Student(); --> dart recomment this type
+- Student student1 = new Student();
+- var student2 = Student();
+
+class Student {
+  
+  late String name;
+  late int rollNo;
+  late double gpa; 
+  late String email;
+  late bool isMarried;
+}
+
+void main() {
+  
+  Student student = Student();
+ 
+  student.name = "Bilal";
+  student.rollNo = 20;
+  student.gpa = 3.21;
+  student.email = "abcd@gmail.com";
+  student.isMarried = true;
+  
+  print(student.name);
+  print(student.rollNo);
+  print(student.gpa);
+  print(student.email);
+  print(student.isMarried);
+}
+
+
+/// new way to assign and print value in class and function
+
+void main() {
+  Student ali = Student();
+
+  ali.name = "Ali";
+  ali.rollNo = 20;
+  ali.gpa = 3.21;
+
+  ali.printDetails();
+
+  Student usama = Student();
+
+  usama.name = "Usama";
+  usama.rollNo = 21;
+  usama.gpa = 3.22;
+
+  usama.printDetails();
+
+  Student hamza = Student();
+
+  hamza.name = "Hamza";
+  hamza.rollNo = 22;
+  hamza.gpa = 3.24;
+
+  hamza.printDetails();
+}
+
+class Student {
+  late String name;
+  late int rollNo;
+  late double gpa;
+
+  printDetails() {
+    print(name);
+    print(rollNo);
+    print(gpa);
+  }
+}
+
+
+
