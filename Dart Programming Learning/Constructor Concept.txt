@@ -26,6 +26,7 @@ Purpose of constructor:
 - Object Instantiation
 - Constructors are used to initialize class properties
 class
+- class properties always be initialized inside constructor
 
 
 Syntax ::

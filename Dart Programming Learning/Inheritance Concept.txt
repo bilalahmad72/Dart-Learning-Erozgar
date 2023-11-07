@@ -1,0 +1,117 @@
+Inheritance:
+
+
+/// how to handle constructors in Inheritance
+
+- Classes relationship 
+- Inherit one class from another
+- Code Reusability ( this thing we will achieve while using inheritance )
+- Parent class, Super Class
+- Child Class, Derived Class
+- A class can derive from only one class
+- Multilevel inheritance
+- Contructors can't be inherit to child class or any other class
+
+
+void main() {
+  
+  Human human = Human();
+  human.name = "Ali";
+  human.age = 23;
+  human.height = 5.8;
+  human.skinColor = "Red";
+  human.dob = "11 Nov, 1992";
+ 
+  
+  human.eating();
+  human.sleeping();
+  human.walking();
+  
+  Male male = Male();
+  
+  male.name = "Usama";
+  male.age = 24;
+  male.eating();
+  male.sleeping();
+  male.walking();
+  
+  male.bearedColor = "White";
+  male.mustacheColor = "Black";
+  
+  male.carpenting();
+  male.constructing();
+  
+}
+
+
+
+class Human {
+  
+  /// parent class
+  
+  late String name;
+  late int age;
+  late double height;
+  late String skinColor;
+  late String dob;
+  
+  
+   /// functions
+  eating() {
+    print('Human Eat!');
+  }
+  
+  sleeping() {
+    print('Human Sleep!');
+  }
+  
+  walking() {
+    print('Human Walk!');
+  }
+  
+}
+
+class Male extends Human {
+  /// child class
+  /// derived from Human class
+
+  late String bearedColor;
+  late String mustacheColor;
+  
+  
+   /// functions
+  carpenting() {
+    print('Male Carpenter');
+  }
+  
+  constructing() {
+    print('Male Construct');
+  }
+  
+  
+}
+
+
+class Female extends Human {
+  
+  /// child class
+  /// derived from Human class
+  
+  late String hairColor;
+  late String hairLength;
+  
+  
+  /// functions
+  cooking() {
+    print('Female cook');
+  }
+  
+  stitching() {
+    print('Female stitch');
+  }
+  
+  cleaning() {
+     print('Female clean');
+  }
+  
+}
