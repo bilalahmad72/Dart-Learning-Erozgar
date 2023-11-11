@@ -115,3 +115,242 @@ class Female extends Human {
   }
   
 }
+
+
+
+/// How to Handle Constructor in Inheritance
+
+- Parent class Constructor will call first then will be able to make the constructor of child classes
+
+- When there will be un-named parameters in parent class then simply we can class constructor of child class
+
+void main () {
+  
+  Student student = Student();
+  
+}
+
+class Human {
+  
+  Human() {
+    print('Human Contstructor!');
+  }
+}
+
+class Male extends Human {
+  
+  Male() {
+     print('Male Contstructor!');
+  }
+}
+
+class Boy extends Male {
+  
+  Boy() {
+    print('Boy Constructor!');
+  }
+}
+
+
+
+class Student extends Boy {
+  
+  Student() {
+    print('Student Constructor!');
+  }
+}
+
+
+class Female extends Human{
+  
+  Female() {
+     print('Female Contstructor!');
+  }
+}
+
+
+Output:
+
+Human Constructor!
+Male Constructor!
+Boy Constructor!
+Student Constructor!
+
+
+
+- When there will be namedparameters in parent class then to call the constructor of child class we need to add " super keyword with the color (:) in front of child class constructor"
+
+void main() {}
+
+class Human {
+  late String name;
+  late int age;
+  late String skinColor;
+
+  Human(String name, int age, String skinColor) {
+    print('Human Contstructor!');
+  }
+}
+
+class Male extends Human {
+  Male() : super("Bilal", 25, "Brown") {
+    print('Male Contstructor!');
+  }
+}
+
+class Female extends Human {
+  Female() : super("Fatima", 12, "Brown") {
+    print('Female Contstructor!');
+  }
+}
+
+
+
+- if constructor overloading then we can do in this way
+
+class Human {
+  late String name;
+  late int age;
+  late String skinColor;
+
+  Human({required String name, required int age, String skinColor = ''}) {
+    print('Human Contstructor!');
+  }
+}
+
+class Male extends Human {
+  Male() : super(name: "Bilal", age: 25) {
+    print('Male Contstructor!');
+  }
+}
+
+class Female extends Human {
+  Female() : super(name: "Fatima", age: 12, skinColor: "Brown") {
+    print('Female Contstructor!');
+  }
+}
+
+
+
+- if grand child extend with his parent class then we can call in this way
+
+class Human {
+  late String name;
+  late int age;
+  late String skinColor;
+
+  Human({required String name, required int age, String skinColor = ''}) {
+    print('Human Contstructor!');
+  }
+}
+
+class Male extends Human {
+  late String bearedC0lor;
+  late String mustacheColor;
+
+  Male(String bearedColor, String mustacheColor)
+      : super(name: "Bilal", age: 25) {
+    print('Male Contstructor!');
+  }
+}
+
+class Boy extends Male {
+  Boy() : super("Black", "Black") {
+    print("Boy Constructor!");
+  }
+}
+
+
+
+- when there will be a named constructor or more constructors in parent class then we can use or handle only one contructor of parent class
+
+void main() {
+  
+  Male male = Male();
+}
+
+class Human {
+  late String name;
+  late int age;
+  late String skinColor;
+
+//   Human({required String name, required int age, String skinColor = ''}) {
+//     print('Human Contstructor!');
+//   }
+
+  Human.asian(String country, String language) {
+    print('Human Asian Constructor!');
+  }
+}
+
+class Male extends Human {
+  late String bearedC0lor;
+  late String mustacheColor;
+
+//   Male({required String bearedColor, String mustacheColor = ""})
+//       : super(name: "Bilal", age: 25) {
+//     print('Male Contstructor!');
+//   }
+
+  Male() : super.asian("Pakistan", "Urdu") {
+    print('Male Constructor!');
+  }
+}
+
+class Female extends Human {
+//   Female() : super(name: "Fatima", age: 12, skinColor: "Brown") {
+//     print('Female Contstructor!');
+//   }
+
+  Female() : super.asian("Pakistan", "Urdu") {
+    print('Female Constructor!');
+  }
+} 
+
+
+
+- give value dynamically
+
+
+/// how to give value dynamically
+void main() {
+  Male ali = Male.students(country: 'Pakistan', language: 'Urdu');
+}
+
+class Human {
+  late String name;
+  late int age;
+  late String skinColor;
+
+  Human.asian(String country, String language) {
+    print('Ali country is $country and language is $language');
+  }
+}
+
+class Male extends Human {
+  late String bearedC0lor;
+  late String mustacheColor;
+
+  /// we can use child constructor parameter to the super class
+  Male({required String country, required String language})
+      : super.asian(country, language) {
+        
+      }
+
+  Male.students({required String country, required String language}) : super.asian(country, language) {}
+}
+
+class Female extends Human {
+  Female() : super.asian("Pakistan", "Urdu") {
+    print('Female Constructor!');
+  }
+}
+
+
+
+
+
+
+
+
+

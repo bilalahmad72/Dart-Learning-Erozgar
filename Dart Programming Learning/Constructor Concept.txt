@@ -155,3 +155,42 @@ class Student {
   
 }
 
+
+
+- No Arguments Constructor
+
+void main() {}
+
+class Animal {
+  
+}
+
+class Dog extends Animal {
+  
+  /// no arguments constructor
+  Dog() {}
+}
+
+class Cat extends Animal {
+  
+  /// no arguments constructor
+  Cat() {}
+}
+
+
+- if No Argumnet in parent class Constructor, but parent constructor added then
+
+class Animal {
+  Animal() {}
+}
+
+class Dog extends Animal {
+  Dog() {}
+}
+
+class Cat extends Animal {
+  Cat() {}
+}
+
+
+
