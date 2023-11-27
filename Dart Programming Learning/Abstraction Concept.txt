@@ -1,0 +1,65 @@
+Abstraction Concept
+
+==>  void keyword mean its doesn't return anything..
+
+
+There are 2 types of classes
+
+1) Concrete Classes 
+  
+2) Abstract Classes
+
+--> Its like regular class but some points make its different
+
+    a) we cannot be instantiated abstract class object 
+    b) its include abstract method ( the functions that don't have body "{}")
+
+    example:
+ 
+	void foods(); /// function signature
+
+    c) it can include on regular functions as well
+
+    example:
+      
+        void printDetails(){} /// 
+
+
+void main() {}
+
+abstract class Animal {
+
+  /// abstract methods/functions
+  
+  void voice(); /// function signataure
+  
+  void foodList(); /// function signature
+  
+  void printDetails() {
+    
+  }
+  
+  
+}
+
+class Dog extends Animal {
+  
+  
+  /// when there are function signature in 
+  /// abstract parent class then we need to write override keyword 
+  /// with that function
+  
+  /// normal function can be optional we can write or not inside child class
+  
+  @override
+  void voice() {
+    // TODO: implement voice
+    
+  }
+  
+  @override
+  void foodList() {
+    // TODO: implement foodList
+  }
+  
+}

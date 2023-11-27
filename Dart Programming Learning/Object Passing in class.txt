@@ -1,0 +1,113 @@
+
+how to pass object and how to give class parameters value in classes:
+
+
+///////////// 
+
+
+void main() {
+  Male ali = Male(123, 'Bilal', Boy());
+}
+
+class Human {
+  Human() {}
+}
+
+class Male extends Human {
+  late Boy boy;
+
+  Male(int number, String name, Boy boy) {}
+}
+
+class Boy extends Human {
+  Boy() {}
+}
+
+
+////////////////
+
+void main() {
+  Human ali = Human(male: Male());
+}
+
+class Human {
+  Human({required Male male}) {}
+}
+
+class Male extends Human {
+  Male() : super(male: Male()) {}
+}
+
+class Boy extends Human {
+  Boy() : super(male: Male()) {}
+}
+
+
+////////////////
+
+void main() {
+  
+  ///
+  Human ali = Human(
+    male: Male(
+      boy: Boy(),
+    ),
+  );
+}
+
+class Human {
+  Human({required Male male}) {}
+}
+
+class Male {
+  Male({required Boy boy}) {}
+}
+
+class Boy {
+  Boy() {}
+}
+
+
+/////////////////
+
+void main() {
+  ///
+  Boy boy = Boy(
+    student: Student(),
+  );
+
+  ///
+  Male male = Male(
+    boy: Boy(
+      student: Student(),
+    ),
+  );
+
+  ///
+  Human ali = Human(
+    male: Male(
+      boy: Boy(
+        student: Student(),
+      ),
+    ),
+  );
+}
+
+class Human {
+  Human({required Male male}) {}
+}
+
+class Male {
+  Male({required Boy boy}) {}
+}
+
+class Boy {
+  Boy({required Student student}) {}
+}
+
+class Student {
+  Student() {}
+}
+
+
+

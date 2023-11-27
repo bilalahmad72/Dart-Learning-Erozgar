@@ -1,0 +1,219 @@
+//// Another example of abstract class
+
+
+void main() {
+  User user = User(
+    fName: 'Bilal',
+    lName: 'Ahmad',
+    age: 24,
+    email: 'abcd@gmail.com',
+  );
+  Order order = Order(id: 2100);
+  Product product = Product(
+    name: 'Iphone 7',
+    price: 142000,
+    quantity: 1,
+  );
+
+  print(user.printVal() + order.printVal() + product.printVal());
+}
+
+abstract class Serializable {
+  
+  Map<String, dynamic> toJson(); // function signature
+
+  String printVal(); // function signature
+}
+
+class User extends Serializable {
+  late String fName;
+  late String lName;
+  late int age;
+  late String email;
+  String? password;
+
+  User({
+    required this.fName,
+    required this.lName,
+    required this.age,
+    required this.email,
+    this.password,
+  });
+
+  @override
+  Map<String, dynamic> toJson() {
+    return {
+      'fName': fName,
+      'lName': lName,
+      'age': age,
+      'email': email,
+      'password': password,
+    };
+  }
+
+  @override
+  String printVal() {
+    return "Name is $fName $lName. $age years old. Email is $email\n";
+  }
+}
+
+class Product extends Serializable {
+  late String name;
+  late double price;
+  late int quantity;
+
+  Product({
+    required this.name,
+    required this.price,
+    required this.quantity,
+  });
+
+  @override
+  Map<String, dynamic> toJson() {
+    return {
+      'name': name,
+      'price': price,
+      'quantity': quantity,
+    };
+  }
+
+  @override
+  String printVal() {
+    return "Product Name $name with price of $price PKR.";
+  }
+}
+
+class Order extends Serializable {
+  late int id;
+
+  Order({required this.id});
+
+  @override
+  Map<String, dynamic> toJson() {
+    return {
+      'id': id,
+    };
+  }
+
+  @override
+  String printVal() {
+    return "Order id: $id ";
+  }
+}
+
+
+
+////// 2nd way
+
+
+
+
+void main() {
+  /// User
+  User user = User(
+    name: "Bilal",
+    age: 24,
+    email: "abcd@gmail.com",
+  );
+
+  /// Products
+  Product product1 = Product(
+    id: "1",
+    title: "HP 2020 Laptop",
+    price: 40000,
+  );
+  Product product2 = Product(
+    id: "2",
+    title: "Dell 2021 Laptop",
+    price: 45000,
+  );
+  Product product3 = Product(
+    id: "3",
+    title: "Macbook M1 Laptop",
+    price: 350000,
+  );
+
+  /// Orders
+  Order order = Order(
+    orderId: "1122",
+    user: user,
+    products: [
+      product1,
+      product2,
+      product3,
+    ],
+  );
+  
+  
+   // Serializing User, Product, and Order to JSON
+  Map<String, dynamic> userJson = user.toJson();
+  Map<String, dynamic> product1Json = product1.toJson();
+  Map<String, dynamic> product2Json = product2.toJson();
+  Map<String, dynamic> orderJson = order.toJson();
+
+  // Printing the JSON output
+  print('User JSON: $userJson');
+  print('Product1 JSON: $product1Json');
+  print('Product2 JSON: $product2Json');
+  print('Order JSON: $orderJson');
+  
+}
+
+// Abstract class Serializable
+abstract class Serializable {
+  Map<String, dynamic> toJson();
+}
+
+// User class
+class User extends Serializable {
+  late String name;
+  late int age;
+  late String email;
+
+  User({required this.name, required this.age, required this.email});
+
+  @override
+  Map<String, dynamic> toJson() {
+    return {
+      'name': name,
+      'age': age,
+      'email': email,
+    };
+  }
+}
+
+// Product class
+class Product extends Serializable {
+  late String id;
+  late String title;
+  late double price;
+
+  Product({required this.id, required this.title, required this.price});
+
+  @override
+  Map<String, dynamic> toJson() {
+    return {
+      'id': id,
+      'title': title,
+      'price': price,
+    };
+  }
+}
+
+// Order class
+class Order extends Serializable {
+  late String orderId;
+  User user;
+  List<Product> products;
+
+  Order({required this.orderId, required this.user, required this.products});
+
+  @override
+  Map<String, dynamic> toJson() {
+    return {
+      'orderId': orderId,
+      'user': user.toJson(),
+      'products': products.map((p) => p.toJson()).toList(),
+    };
+  }
+}

@@ -1,0 +1,85 @@
+/// Area of Shape
+
+void main() {
+  /// circle area
+  Circle circle = Circle(radius: 2);
+  circle.calculateArea();
+
+  /// rectangle area
+  Rectangle rectangle = Rectangle(length: 10, width: 20);
+  rectangle.calculateArea();
+  
+  /// square Area
+  Square square = Square(squareSide: 30);
+  square.calculateArea();
+  
+  /// Triangle Area
+  Triangle triAngle = Triangle(tBase: 12, height: 30);
+  triAngle.calculateArea();
+}
+
+abstract class Shape {
+  late double area;
+
+  void calculateArea();
+}
+
+class Circle extends Shape {
+  late double radius;
+
+  Circle({required double radius}) {
+    this.radius = radius;
+  }
+
+  @override
+  void calculateArea() {
+    area = 3.14 * radius * radius;
+    print("Area of Circle is $area");
+  }
+}
+
+class Rectangle extends Shape {
+  late double length;
+  late double width;
+
+  Rectangle({required double length, required double width}) {
+    this.length = length;
+    this.width = width;
+  }
+
+  @override
+  void calculateArea() {
+    area = length * width;
+    print("Area of Rectangle $area");
+  }
+}
+
+class Square extends Shape {
+  late double squareSide;
+  
+  Square({required double squareSide}){
+    this.squareSide = squareSide;
+  }
+  
+  @override
+  void calculateArea() {
+    area = squareSide * squareSide;
+    print('Area of Square $area');
+  }
+}
+
+class Triangle extends Shape {
+  late double tBase;
+  late double height;
+  
+  Triangle({required double tBase, required double height}){
+    this.tBase = tBase;
+    this.height = height;
+  }
+  
+  @override
+  void calculateArea() {
+    area = (tBase * height) / 2;
+    print("Area of Triangle $area");
+  }
+}
