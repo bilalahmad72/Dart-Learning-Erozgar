@@ -11,7 +11,7 @@ void main() {
 // - We can't have "non-nullable & uninitialized" optional named params
 // - Optional named params can either be nullable or initialized with values
 
-// function-loading: calling a same functino with different no of param, and with different sequence of params, with different types of paramsss
+// function-loading: calling a same function with different no of param, and with different sequence of params, with different types of paramsss
   addition(10, 20.342, no3: 30, no4: 40);
   addition(10, 20.24, no4: 40, no3: 30);
   addition(

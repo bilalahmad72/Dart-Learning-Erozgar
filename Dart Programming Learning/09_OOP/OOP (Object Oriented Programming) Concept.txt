@@ -30,7 +30,7 @@ Objects :-
 Class Syntax:
 
 - Properties --> Data Members / Specifications / Variables
-- Functions --> Methods / Member Functon 
+- Functions --> Methods / Member Function 
 
 
 Objects:
@@ -43,7 +43,7 @@ ClassName objectName = ClassName();
 
 /// Object creation Methods
 
-- Student student = Student(); --> dart recomment this type
+- Student student = Student(); --> dart recommend this type
 - Student student1 = new Student();
 - var student2 = Student();
 

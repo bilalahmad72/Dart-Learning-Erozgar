@@ -6,7 +6,6 @@
 //   // Abstract method (without implementation)
 //   returnType methodName();
 
-
 //   // Concrete method (with implementation)
 //   returnType concreteMethodName() {
 //     // method body

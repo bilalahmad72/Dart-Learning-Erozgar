@@ -1,11 +1,19 @@
 Dear Students!
+
+
 In this post, i'll share with you a list of the key topics that you should learn to become a proficient Flutter developer. it may take time to cover all of the modules thoroughly. It is crucial to have a solid grasp of these concepts if you want to become an expert Flutter developer.
+
+
 PREREQUISITE
+
 Knowledge of Object-Oriented Programming (OOP):
+
 Understanding OOP concepts such as classes, objects, and inheritance will help you write better code in Flutter
 Familiarity with Integrated Development Environments (IDEs):
 Flutter can be developed using a variety of IDEs, including Android Studio, Visual Studio Code, and IntelliJ IDEA. Familiarity with an IDE can make it easier to write, test, and debug your code in Flutter
+
 Understanding of the Flutter Framework:
+
 Before starting to develop with Flutter, it's important to have a basic understanding of the Flutter framework, including its architecture, widgets, and libraries. This will help you create better apps and make more informed decisions when designing and developing your app
 
 IDE
